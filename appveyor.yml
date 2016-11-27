@@ -13,6 +13,7 @@ install:
   - "cpanm Dist::Zilla"
   - "dzil authordeps | cpanm"
   - "dzil listdeps --author | cpanm"
+  - "perl -V"
 
 before_build:
   - "dzil build"
