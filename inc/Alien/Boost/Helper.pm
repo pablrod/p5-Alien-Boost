@@ -26,7 +26,7 @@ sub main::install {
 
     my $dst_headers_folder = catdir($dir, 'include');
     move $headers_folder, $dst_headers_folder;
-    move catdir($stage_folder, 'lib'), $dir;
+    move catdir($stage_folder, 'lib'), catdir($dir, 'lib');
 }
 
 1;
